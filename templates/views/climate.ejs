@@ -1,0 +1,216 @@
+<%layout('../boiler_plate2')%>
+<% if(climate.description=='Rain'){%>                                                   
+<div class='climatecontainer'>
+
+    <div class='cityName rounded'>
+    <h1>City:<%=climate.cityName%></h1>
+    </div>
+	<div class="image">
+	   <img src="/icons/heavyrain.png">
+	</div>
+	<div class="display">
+	    <div id='Temp' class="rounded">
+	    <h1>TEMPERATURE</h1>
+	    <h1><%=(Math.trunc(climate.temperature-273))%> C</h1>
+	    </div>
+	    <div id='Desc' class="rounded">
+	    <%= %>
+	    <h1>DESCRIPTION</h1>
+	    <h1>RAINY</h1>
+	    </div>
+    </div>
+</div>
+ 
+<% } %>
+
+<% if(climate.description=='Clouds'){%>
+    
+	<% if(climate.details=='few clouds'){ %>
+            <div class='climatecontainer'>
+
+    <div class='cityName rounded'>
+    <h1>City:<%=climate.cityName%></h1>
+    </div>
+	<div class="image">
+	   <img src="/icons/suncloud2.jpg" >
+	</div>
+	<div class="display">
+	    <div id='Temp' class="rounded">
+	    <h1>TEMPERATURE</h1>
+	    <h1><%=(Math.trunc(climate.temperature-273))%> C</h1>
+	    </div>
+	    <div id='Desc' class="rounded">
+	    <%= %>
+	    <h1>DESCRIPTION</h1>
+	    <h1>FEW CLOUDS</h1>
+	    </div>
+    </div>
+ </div>
+	<%  }%>
+
+	<% if(climate.details=='broken clouds'){ %>
+    <div class='climatecontainer'>
+	    <div class='cityName rounded'>
+	    <h1>City:<%=climate.cityName%></h1>
+	    </div>
+		<div class="image">
+		   <img src="/icons/brokenclouds.png">
+		</div>
+		<div class="display">
+		    <div id='Temp' class="rounded">
+		    <h1>TEMPERATURE</h1>
+		    <h1><%=(Math.trunc(climate.temperature-273))%> C</h1>
+		    </div>
+		    <div id='Desc' class="rounded">
+		    <%= %>
+		    <h1>DESCRIPTION</h1>
+		    <h1>BROKEN CLOUDS</h1>
+		    </div>
+	    </div>
+</div>
+	<%  }%>
+
+	<% if(climate.details=='overcast clouds'){ %>
+          <div class='climatecontainer'>
+
+    <div class='cityName rounded'>
+    <h1>City:<%=climate.cityName%></h1>
+    </div>
+	<div class="image">
+	   <img src="/icons/overcastclouds.png">
+	</div>
+	<div class="display">
+	    <div id='Temp' class="rounded">
+	    <h1>TEMPERATURE</h1>
+	    <h1><%=(Math.trunc(climate.temperature-273))%> C</h1>
+	    </div>
+	    <div id='Desc' class="rounded">
+	    <%= %>
+	    <h1>DESCRIPTION</h1>
+	    <h1>OVERCAST CLOUDS</h1>
+	    </div>
+    </div>
+</div>
+	<%  }%>
+
+
+	<% if(climate.details=='scattered clouds'){ %>
+          <div class='climatecontainer'>
+
+    <div class='cityName rounded'>
+    <h1>City:<%=climate.cityName%></h1>
+    </div>
+	<div class="image">
+	   <img src="/icons/scatteredclouds.png">
+	</div>
+	<div class="display">
+	    <div id='Temp' class="rounded">
+	    <h1>TEMPERATURE</h1>
+	    <h1><%=(Math.trunc(climate.temperature-273))%> C</h1>
+	    </div>
+	    <div id='Desc' class="rounded">
+	    <%= %>
+	    <h1>DESCRIPTION</h1>
+	    <h1>OVERCAST CLOUDS</h1>
+	    </div>
+    </div>
+</div>
+	<%  }%>
+
+
+<% } %>
+
+<% if(climate.description=='Haze'){%>
+ <div class='climatecontainer'>
+
+    <div class='cityName rounded'>
+    <h1>City:<%=climate.cityName%></h1>
+    </div>
+	<div class="image">
+	   <img src="/icons/Haze.png">
+	</div>
+	<div class="display">
+	    <div id='Temp' class="rounded">
+	    <h1>TEMPERATURE</h1>
+	    <h1><%=(Math.trunc(climate.temperature-273))%> C</h1>
+	    </div>
+	    <div id='Desc' class="rounded">
+	    <%= %>
+	    <h1>DESCRIPTION</h1>
+	    <h1>HAZY</h1>
+	    </div>
+    </div>
+</div>
+<% } %>
+
+<% if(climate.description=='Mist'){%>                                                            
+	<div class='climatecontainer'>
+
+    <div class='cityName rounded'>
+    <h1>City:<%=climate.cityName%></h1>
+    </div>
+	<div class="image">
+	   <img src="/icons/mist.jpg">
+	</div>
+	<div class="display">
+	    <div id='Temp' class="rounded">
+	    <h1>TEMPERATURE</h1>
+	    <h1><%=(Math.trunc(climate.temperature-273))%> C</h1>
+	    </div>
+	    <div id='Desc' class="rounded">
+	    <%= %>
+	    <h1>DESCRIPTION</h1>
+	    <h1>MIST</h1>
+	    </div>
+    </div>
+</div>
+	
+<% } %>
+
+<% if(climate.description=='Clear'){%>
+	<div class='climatecontainer'>
+
+    <div class='cityName rounded'>
+    <h1>City:<%=climate.cityName%></h1>
+    </div>
+	<div class="image">
+	   <img src="/icons/sun.png">
+	</div>
+	<div class="display">
+	    <div id='Temp' class="rounded">
+	    <h1>TEMPERATURE</h1>
+	    <h1><%=(Math.trunc(climate.temperature-273))%> C</h1>
+	    </div>
+	    <div id='Desc' class="rounded">
+	    <%= %>
+	    <h1>DESCRIPTION</h1>
+	    <h1>CLEAR SKY</h1>
+	    </div>
+    </div>
+</div>
+
+<% } %>
+
+<% if(climate.description=='Smoke'){%>
+	<div class='climatecontainer'>
+
+    <div class='cityName rounded'>
+    <h1>City:<%=climate.cityName%></h1>
+    </div>
+	<div class="image">
+	   <img src="/icons/smoky.png">
+	</div>
+	<div class="display">
+	    <div id='Temp' class="rounded">
+	    <h1>TEMPERATURE</h1>
+	    <h1><%=(Math.trunc(climate.temperature-273))%> C</h1>
+	    </div>
+	    <div id='Desc' class="rounded">
+	    <%= %>
+	    <h1>DESCRIPTION</h1>
+	    <h1>SMOKY</h1>
+	    </div>
+    </div>
+</div>
+
+<% } %>

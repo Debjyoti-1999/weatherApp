@@ -1,0 +1,53 @@
+body{
+	 background-color: grey;
+}
+h1{
+	text-align: center;
+	font-weight: bold;
+} 
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+.image{
+	display: flex;;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 30px;
+}
+.display{
+	padding-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap-reverse;
+}
+.cityName{
+	display: flex;
+	justify-content: center;
+	
+	padding-top: 20px;
+	color: black;
+	font-weight: bold;
+}
+.climatecontainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#Temp{
+ color:black;
+ background-color: rgb(222, 91, 91);
+ height: 300px;
+ width: 300px;
+
+}
+#Desc{
+ color:black;
+ background-color: rgb(50, 141, 160);
+ height: 300px;
+ width: 300px;
+}
